@@ -1,0 +1,328 @@
+/* page/staff_hp/staff_hp.wxss */
+
+@import '/util/common.wxss';
+
+swiper {
+  height: 421.5rpx;
+}
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+.search {
+  padding: 20rpx;
+}
+
+.search-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50rpx;
+  color: #aaa;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 20rpx;
+}
+
+.search-text icon {
+  margin-right: 10rpx;
+}
+
+.select-title {
+  width: 100%;
+  padding: 0;
+  height: auto;
+  color: #aaa;
+  text-align: center;
+  font-size: 30rpx
+}
+
+.newest-title {
+  width: 100%;
+  padding: 30rpx 0;
+  height: 40rpx;
+  color: #dcbe1e;
+  text-align: center;
+}
+
+
+.newest-box {
+  padding: 0 40rpx;
+}
+
+.newest-box .newest-list {
+  display: inline-block;
+  width: 325rpx;
+  height: 325rpx;
+  margin: 0 20rpx 20rpx 0;
+  border-radius: 10px;
+  text-align: center;
+  background: #f5f6f5;
+}
+
+.newest-box .newest-list:nth-child(2n) {
+  margin-right: 0;
+}
+
+.newest-box .newest-list image {
+  width: 175rpx;
+  height: 175rpx;
+  margin: 20rpx 0 10rpx;
+}
+
+.newest-box .newest-list .newest-text {
+  font-size: 32rpx;
+}
+
+.getPos-btn {
+  margin-bottom: 10rpx;
+  text-align: center;
+  color: #fff;
+  font-weight: 900;
+  font-size: larger;
+  background-color: #dcaa1e;
+  border-radius: 20rpx;
+}
+
+.tip {
+  font-size: 0.5cm;
+  text-align: center;
+  margin-top: 30%;
+}
+
+.login-btn {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+  font-size: larger;
+  margin-top: 10%;
+  background-color: #dcaa1e;
+}
+
+.cart {
+  float: right;
+  position: fixed;
+  bottom: 120rpx;
+  right: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%
+}
+
+.carts-icon {
+  position: absolute;
+  right: 40rpx;
+  top: 40rpx;
+  width: 75rpx;
+  height: 75rpx;
+}
+
+.carts-icon image {
+  width: 100%;
+  height: 100%;
+}
+
+.carts-icon.on {
+  -webkit-animation: to_cart_scale .3s ease;
+  animation: to_cart_scale .3s ease;
+}
+
+.carts-icon-num {
+  position: absolute;
+  left: -15rpx;
+  width: 40rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  border-radius: 50%;
+  background: red;
+  color: #fff;
+  font-size: 24rpx;
+}
+
+/**
+*  echarts
+*/
+.echartsData {
+  position: relative;
+}
+
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  height: 400rpx;
+  width: 100%;
+  position: relative;
+  top: -70rpx;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.container2 {
+  height: 300rpx;
+  width: 100%;
+  position: relative;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.firstHead {
+  position: relative;
+  padding-top: 5px;
+  clear: both;
+}
+
+.firstHead image {
+  height: 15px;
+  width: 40px;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+
+.firstBody {
+  position: relative;
+  clear: both;
+  display: inline-block
+}
+
+.li {
+  position: relative;
+  padding-top: 5px;
+  padding-left: 25px;
+}
+
+.line {
+  margin-top: 5rpx;
+  clear: both;
+  background: #E0E3DA;
+  width: 100%;
+  height: 5rpx;
+}
+
+.firstBottom {
+  position: relative;
+  height: 350rpx;
+  width: 100%;
+}
+
+.detail {
+  float: right;
+  width: 120rpx;
+  border: solid 0rpx gray;
+  margin-right: 20rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.secondHead {
+  position: relative;
+  clear: both;
+  padding: 0rpx;
+  margin: 0rpx;
+  height: 450rpx;
+}
+
+.secondHead image {
+  height: 15px;
+  width: 40px;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+
+.date {
+  background-color: gray;
+  text-align: center;
+  padding: 0;
+  margin-right: 40rpx;
+  float: right;
+  width: 150rpx;
+  height: 50rpx;
+}
+
+.food2 {
+  float: left;
+  height: 250rpx;
+  width: 250rpx;
+  margin-top: 60rpx;
+}
+
+.rank {
+  font-size: 35rpx;
+  text-align: center;
+}
+
+.picture image {
+  height: 200rpx;
+  width: 200rpx;
+  display: flex;
+  justify-content: center;
+  padding-left: 30rpx;
+}
+
+.vote {
+  text-align: center;
+  padding-top: 5rpx;
+}
+
+.food1 {
+  float: left;
+  height: 250rpx;
+  width: 250rpx;
+  margin-top: 10rpx;
+}
+
+.function {
+  padding: 10px;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.function .i-grid-item {
+  background: rgb(242, 243, 246);
+}
+
+.function image {
+  width: 200%;
+  height: 300%;
+}
+
+.hot-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.hot image {
+  width: 100%;
+  height: 195px;
+  margin: 0 auto;
+}
+
+.hot-content {
+  padding-top: 10px;
+}
+
+.hot-content view {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

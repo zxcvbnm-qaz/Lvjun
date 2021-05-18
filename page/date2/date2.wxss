@@ -1,0 +1,102 @@
+/* page/date2.0/date2.0.wxss */
+
+.page {
+  height: 1331.25rpx;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.dateTitle {
+  font-weight: 550;
+  display: flex;
+  flex-direction: row;
+}
+
+image {
+  height: 50rpx;
+  width: 50rpx;
+  padding: 0 10rpx 0 15rpx;
+}
+
+.dateMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu {
+  height: 50rpx;
+  width: 200rpx;
+  background-color: #efefef;
+  margin: 15rpx 0 15rpx 0;
+  font-size: 33rpx;
+  font-weight: 550;
+  text-align: center;
+}
+.menu1{
+  height: 50rpx;
+  width: 139rpx;
+  background-color: #efefef;
+  margin: 15rpx 0 15rpx 0;
+  font-size: 33rpx;
+  font-weight: 550;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  margin: 0 auto;
+  width: 100%;
+  height: 3rpx;
+  background-color: #EFEFEF;
+}
+
+.dateChart {
+  height: 400rpx;
+  width: 100%;
+  border: #efefef solid 3px;
+}
+
+.flow {
+  display: flex;
+  flex-direction: column;
+}
+
+.folwTitle {
+  margin: 10rpx 0 10rpx 0;
+  font-weight: 550;
+  display: flex;
+  flex-direction: row;
+}
+
+.flowChart {
+  height: 400rpx;
+  border: #efefef solid 3px;
+}
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.container2 {
+  height: 400rpx;
+  width: 100%;
+  position:relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  } 

@@ -1,0 +1,21 @@
+page{
+  background-color: #f36262;
+}
+
+.tui-picker-content{
+  padding: 30rpx;
+  text-align: center;
+}
+.tui-picker-name{
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.tui-picker-detail{
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: rgb(255, 255, 255);
+  font-size: 35rpx;
+  padding: 0 10px;
+  overflow: hidden;
+  border-radius: 25rpx;
+}

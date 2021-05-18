@@ -1,0 +1,12 @@
+<!--page/staff_hp_detail/staff_hp_detail.wxml-->
+<navigation title="数据统计" direction="left" show_bol='{{false}}'></navigation>
+<import src="../../util/tabBar-template.wxml"/>
+
+
+<view class="back" bindtap="goHp"><image src="../../images/back.png"></image></view>
+
+ <view class="firstBottom">
+    <view class="container2">
+      <ec-canvas id="mychart-dom-line2" canvas-id="mychart-line2" ec="{{ ec2 }}"></ec-canvas>
+    </view>
+   </view>

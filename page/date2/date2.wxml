@@ -1,0 +1,38 @@
+<navigation title="数据统计" show_bol='{{false}}'></navigation>
+
+<view class="page">
+
+	<view class="date">
+		<view class="dateTitle">
+			<image src="../../images/柱状图.png"></image>
+			<text>评分及评价数据看板</text>
+		</view>
+		<view class="dateMenu">
+			<view class="menu">选择食堂</view>
+			<view class="menu">选择菜品</view>
+			<view class="menu1">
+				<view>日期</view>
+				<image src="../../images/下三角.png"></image>
+			</view>
+		</view>
+		<view class="line"></view>
+		<view class="dateChart">
+			<view class="container2">
+				<ec-canvas id="mychart-dom-line2" canvas-id="mychart-line2" ec="{{ ec2 }}"></ec-canvas>
+			</view>
+		</view>
+		<view class="detail"></view>
+	</view>
+
+
+	<view class="flow">
+		<view class="folwTitle">
+			<image src="../../images/柱状图.png"></image>
+			<text>人流量记录</text>
+		</view>
+		<view class="flowChart">
+			<view>图表</view>
+		</view>
+
+	</view>
+</view>

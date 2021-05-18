@@ -1,0 +1,40 @@
+@import '/util/common.wxss';
+
+.logoImage image{
+  display:block;
+  width: 576rpx;
+  height: 800rpx;
+  margin-left: 8%;
+}
+
+.footer{
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  display: block;
+  align-content: center;
+}
+
+.footer .login-btn{
+  text-align:center;
+  color: rgb(133, 133, 133);
+  font-weight: 900;
+  font-size: larger;
+  background-color: rgb(255, 255, 255);
+}
+
+.footer .userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin-left: 43%;
+  border-radius: 50%;
+}
+
+.copyright{
+  margin-top: 20rpx;
+  font-size: 12;
+  color: rgb(173, 173, 173);
+  text-align: center;
+}

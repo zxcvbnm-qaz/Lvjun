@@ -1,0 +1,51 @@
+/* page/food_m2.0/food_m2.0.wxss */
+
+.page{
+  height: 100%;
+  width: 94%;
+  margin: 2% 3% 0 3%;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.menu{
+  height: 14%;
+  width: 70%;
+  padding-bottom: 5px;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.left image{
+  height: 150rpx;
+  width: 150rpx;
+}
+.mid{
+  height: 110rpx;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.right{
+  margin-top: 25rpx;
+  width: 100rpx;
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.right button{
+  padding: 0;
+  margin: 0;
+  font-size: 30rpx;
+  width: 20rpx;
+}
+.eidt{
+  height:30rpx;
+  width: 30rpx;
+  align-items: center;
+  background-color:blue;
+}

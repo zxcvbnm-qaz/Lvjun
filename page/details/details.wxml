@@ -1,0 +1,17 @@
+<navigation title="详情" direction="left" show_bol='{{true}}'></navigation>
+<view class="main">
+    <view class="goods-box">
+        <image src="{{goods.image}}" class="goods-thumb"></image>
+        <image wx:if="{{show}}" src="{{goods.imageUrl}}" class="to-carts-icon"></image>
+        <view class="goods-title">{{goods.title}}</view>
+        <view class="goods-price">￥ {{goods.price}}</view>
+    </view>
+    <view class="goods-tab-box">
+        <view class="goods-tab-nav {{curIndex === 0 ?'on':''}}" bindtap="bindTap" data-index="0">菜品详情</view>
+        <view class="goods-tab-nav {{curIndex === 1 ?'on':''}}" bindtap="bindTap" data-index="1">推荐饮料</view>
+        <view class="goods-tab-nav {{curIndex === 2 ?'on':''}}" bindtap="bindTap" data-index="2">类似菜品</view>
+        <view class="goods-content">
+          <scroll-view wx:if="{{curIndex === 0}}">{{goods.detail}}</scroll-view>
+        </view>
+    </view>
+</view>

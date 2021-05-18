@@ -1,0 +1,155 @@
+<navigation title="主页" direction="left" show_bol='{{false}}'></navigation>
+<view wx:if="{{hasUserInfo}}">
+	<swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+		<block wx:for="{{slideImgUrls}}" wx:key="id">
+			<swiper-item>
+				<image src="{{item.url}}" class="slide-image" width="100%" />
+			</swiper-item>
+		</block>
+	</swiper>
+	<view class="main" wx:if="{{hasUserPos}}">
+		<view class="search" bindtap="search">
+			<view class="search-text">
+				<icon class="weui-icon-search_in-box search-icon" type="search" size="14"></icon>
+				搜 索
+			</view>
+		</view>
+		<view class="selected">
+			<view class="select-title">
+				<text bindtap="getPosBtn">{{userPosition}}</text>
+			</view>
+		</view>
+
+		<!-- 功能 -->
+		<view class="function">
+			<view class="title">
+				功能与服务
+			</view>
+			<view>
+				<i-grid>
+					<i-grid-item bindtap='goview1' data-url='../staff_mine/staff_mine'>
+						<i-grid-icon>
+							<image src=" /images/tar-1.png" />
+						</i-grid-icon>
+						<i-grid-label>菜品管理</i-grid-label>
+					</i-grid-item>
+					<i-grid-item bindtap='goview2' data-url='../vote/vote'>
+						<i-grid-icon>
+							<image src=" /images/tar-2.png" />
+						</i-grid-icon>
+						<i-grid-label>意见反馈</i-grid-label>
+					</i-grid-item>
+					<i-grid-item bindtap='goview3' data-url='../search/search'>
+						<i-grid-icon>
+							<image src=" /images/tar-3.png" />
+						</i-grid-icon>
+						<i-grid-label>食堂选择</i-grid-label>
+					</i-grid-item>
+				</i-grid>
+			</view>
+		</view>
+
+		<!--  echarts -->
+
+		<view class="all">
+			<view class="firstHead">
+				<image src="../../images/graph1.png"></image>
+				投票数据看板
+			</view>
+
+			<view class="firstBody" wx:for="{{List}}">
+				<view class="li" data-index="{{index}}" bindtap="breakfast">{{List[index]}}</view>
+			</view>
+
+			<view class="date">
+				选择日期
+			</view>
+
+			<view class="line"></view>
+
+			<view wx:if="{{chooseBreakfast==true}}">
+				<view class="firstBottom">
+
+					<view class="food2">
+						<view class="rank">2</view>
+						<view class="picture">
+							<image src="../../images/food2.jpg"></image>
+						</view>
+						<view class="vote">640票</view>
+					</view>
+
+					<view class="food1">
+						<view class="rank">1</view>
+						<view class="picture">
+							<image src="../../images/food1.png"></image>
+						</view>
+						<view class="vote">614票</view>
+					</view>
+
+					<view class="food2">
+						<view class="rank">3</view>
+						<view class="picture">
+							<image src="../../images/food3.jpg"></image>
+						</view>
+						<view class="vote">425票</view>
+					</view>
+
+				</view>
+			</view>
+
+			<view wx:if="{{chooseLunch==true}}">
+				<view class="firstBottom">
+					这是午餐
+				</view>
+			</view>
+
+			<view wx:if="{{chooseDinner==true}}">
+				<view class="firstBottom">
+					这是晚餐
+				</view>
+			</view>
+
+			<view wx:if="{{chooseNight==true}}">
+				<view class="firstBottom">
+					这是夜宵
+				</view>
+			</view>
+
+		</view>
+
+		<view class="detail" bindtap="goDetail">详情></view>
+
+		<view class="secondHead">
+			<view class="line"></view>
+			<image src="../../images/graph2.png"></image>
+			人流统计
+			<view class="container">
+				<ec-canvas id="mychart-dom-line1" canvas-id="mychart-line1" ec="{{ ec1 }}"></ec-canvas>
+			</view>
+		</view>
+
+	</view>
+
+	<!-- User未选择地区 -->
+	<view class="main" wx:else>
+		<view class="selected">
+			<view class="select-title">
+				<text>您还没有绑定位置，无法为展示数据</text>
+			</view>
+			<button bindtap="getPosBtn" class="getPos-btn"> 选择地区 </button>
+		</view>
+	</view>
+</view>
+<!-- 未登录状态 -->
+<view wx:else>
+	<myHead></myHead>
+	<view class="tip">
+		<view> 您好！</view>
+		<view>为了保证给您提供更好地服务</view>
+		<view>请您允许微信授权</view>
+	</view>
+	<button bindtap="loginBtn" class="login-btn"> 登 录 </button>
+</view>
+
+<!-- tabar菜单 -->
+<template is="tabBar" data="{{tabBarList}}" />

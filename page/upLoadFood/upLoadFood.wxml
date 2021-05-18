@@ -1,0 +1,4 @@
+<!--page/upLoadFood/upLoadFood.wxml-->
+<navigation title="菜品上传" direction="right" show_bol='{{true}}'></navigation>
+<input type="text" bindinput="foodNameInput" placeholder="菜品名"/>
+<button bindtap="upLoad">上传</button>

@@ -1,0 +1,36 @@
+<navigation title="我的" direction="left" show_bol='{{false}}'></navigation>
+<view class="main">
+	<view class="header">
+		<image src="{{thumb}}" bindtap="bindPos" class="thumb"></image>
+		<text class="nickname">{{nickname}}</text>
+		<text class="motto" bindtap="about_us">{{motto}}</text>
+	</view>
+
+	<view class="mainFunction">
+		<view class="function1">
+			<view class="inventory">
+				<image src="../../images/inventory.png"></image>
+			</view>
+			采购清单
+		</view>
+	</view>
+
+
+
+	<view class="mineFunction">
+		<text>其他服务</text>
+		<view class="line"></view> 
+		<view class="aFunction">
+			<image src="../../images/identity.png"></image>
+			<text>身份认证</text>
+		</view>
+		<view class="aFunction">
+			<image src="../../images/BBS.png"></image>
+			<text>查看论坛</text>
+		</view>
+		<view class="aFunction">
+			<image src="../../images/location.png"></image>
+			<text>切换食堂</text>
+		</view>
+	</view>
+</view>

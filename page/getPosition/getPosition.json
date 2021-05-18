@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "navigation": "../../component/navigation/navigation"
+  },
+  
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "食俭",
+  "navigationBarBackgroundColor": "#f0641e",
+  "backgroundColor": "#eeeeee"
+}

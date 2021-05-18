@@ -1,0 +1,31 @@
+<navigation title="食堂菜品" direction="left" show_bol='{{true}}'></navigation>
+<import src="../../util/tabBar-template.wxml" />
+
+<view>
+
+	<view class="head">
+		<button class="add" bindtap="add">添加新菜品</button>
+	</view>
+
+	<view wx:if="{{manegement==true}}">
+		<view class="newest">
+			<view class="newest-box">
+				<view class="newest-list" wx:for="{{menu}}" wx:key="id">
+					<navigator url=" ">
+						<image src="{{item.img_link}}"></image>
+						<view class="newest-text">
+							<text>{{item.name}}\n$ 5.00</text>
+							<view class="change">
+								<button class="transform">修改</button>
+								<button class="del">删除</button>
+							</view>
+						</view>
+					</navigator>
+				</view>
+			</view>
+		</view>
+	</view>
+
+
+
+</view>

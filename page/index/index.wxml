@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="logoImage">
+    <image src="{{url}}"></image>
+  </view>
+</view>
+<view class="footer">
+  <button wx:if="{{!hasUserInfo && canIUse}}" bindtap="loginBtn" bindgetuserinfo="getUserInfo" open-type="getUserInfo" class="login-btn"> 登 录 </button>
+      <block wx:else>
+      <image bindtap="loginBtn" bindtap="go2hp" open-type="getUserInfo" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    </block>
+    <view class="copyright">Copyright ©️ 2020 SHIJIAN</view>
+</view>

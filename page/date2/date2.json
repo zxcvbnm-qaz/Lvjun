@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "navigation": "../../component/navigation/navigation",
+    "ec-canvas": "../../util/ec-canvas/ec-canvas"
+  }
+}

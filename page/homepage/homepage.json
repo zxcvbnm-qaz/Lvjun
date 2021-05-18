@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "navigation": "../../component/navigation/navigation",
+    "ec-canvas": "../../util/ec-canvas/ec-canvas",
+    "i-grid": "../../component/grid/index",
+    "i-grid-item": "../../component/grid-item/index",
+    "i-grid-icon": "../../component/grid-icon/index",
+    "i-grid-label": "../../component/grid-label/index",
+    "i-notice-bar": "../../component/notice-bar/index"
+  }
+}
